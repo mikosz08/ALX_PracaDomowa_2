@@ -8,7 +8,7 @@ public class Run_PowtarzalnoscWTab {
 		// tablica 20el z liczbami z przedzialu 1..10
 
 		HashSet<Integer> zbiórSpr = new HashSet<Integer>();
-		int[] tab = new int[5];
+		int[] tab = new int[20];
 		int check;
 
 		for (int i = 0; i < tab.length; i++) {
