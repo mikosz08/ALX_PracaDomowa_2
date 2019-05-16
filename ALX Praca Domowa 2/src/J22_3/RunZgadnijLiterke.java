@@ -3,7 +3,7 @@ package J22_3;
 import java.util.HashSet;
 import java.util.Scanner;
 
-public class Run {
+public class RunZgadnijLiterke {
 
 	public static void main(String[] args) {
 

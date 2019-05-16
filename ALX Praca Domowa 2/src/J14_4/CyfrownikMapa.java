@@ -3,12 +3,12 @@ package J14_4;
 import java.util.HashMap;
 import java.util.Scanner;
 
-public class Cyfrownik {
+public class CyfrownikMapa {
 
 	HashMap<String, Integer> mapaCyfr = new HashMap<>();
 	Scanner sc = new Scanner(System.in);
 
-	public Cyfrownik() {
+	public CyfrownikMapa() {
 
 		mapaCyfr.put("Jeden", 1);
 		mapaCyfr.put("Dwa", 2);
@@ -21,7 +21,7 @@ public class Cyfrownik {
 		mapaCyfr.put("Dziewiec", 9);
 		mapaCyfr.put("zero", 0);
 		System.out.println("Value: " + mapaCyfr.values());
-		System.out.println("Key: " +mapaCyfr.keySet());
+		System.out.println("Key: " + mapaCyfr.keySet());
 		System.out.println("Podaj ciag cyfr:");
 
 		while (true) {
@@ -33,16 +33,15 @@ public class Cyfrownik {
 
 				for (String s : mapaCyfr.keySet()) {
 
-					if(charAt == mapaCyfr.get(s)) {
+					if (charAt == mapaCyfr.get(s)) {
 						System.out.println(s);
 						break;
 					}
-					
+
 				}
 
 			}
-
-			break;
+			
 		}
 
 	}

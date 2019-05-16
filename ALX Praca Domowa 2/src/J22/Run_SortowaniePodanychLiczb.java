@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-public class Run {
+public class Run_SortowaniePodanychLiczb {
 	public static void main(String[] args) {
 		List<Integer> lista = new ArrayList<>();
 		Scanner sc = new Scanner(System.in);
@@ -42,13 +42,10 @@ public class Run {
 					lista.set(j, tmp);
 
 					// to wcale nie jest bubblesort tylko mój wlasny sortownik
-
-					System.out.println(lista);
-
 				}
 
 			}
-
+			System.out.println(lista);
 		}
 
 	}

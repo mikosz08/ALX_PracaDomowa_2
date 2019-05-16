@@ -2,7 +2,7 @@ package J20;
 
 import java.util.HashSet;
 
-public class Run {
+public class Run_PowtarzalnoscWTab {
 
 	public static void main(String[] args) {
 		// tablica 20el z liczbami z przedzialu 1..10
