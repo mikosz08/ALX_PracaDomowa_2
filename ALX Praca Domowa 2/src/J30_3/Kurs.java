@@ -17,7 +17,8 @@ public class Kurs extends Uczestnik {
 	}
 
 	public Kurs() {
-		System.out.println("D-dodawanie, U-usuwanie, E-edycja, W-wyświetlanie, P-panel uczestnika");
+		System.out
+				.println("D-dodawanie, U-usuwanie, E-edycja, W-wyświetlanie, P-panel uczestnika, K-przypisz do Kursu");
 
 		while (true) {
 			System.out.println("[Menu Kursów]");
@@ -54,10 +55,43 @@ public class Kurs extends Uczestnik {
 			case 'Q':
 				System.out.println("------quit------");
 				System.exit(0);
+			case 'K':
+				System.out.println("Przypisywanie kursanta...");
+				przypiszDoKursu();
+				System.out.println("-----------------");
 			default:
 				break;
 			}
 		}
+	}
+
+	public void przypiszDoKursu() {
+		System.out.println("Kogo chciałbyś przypisać? (nazwisko)");
+		String nazwisko = sc.nextLine();
+		
+		for (Uczestnik uczestnik : uczestnicy) {
+			
+			if(uczestnik.nazwisko.equals(nazwisko)) {
+				
+				System.out.println("Wybierz kurs: ");
+				System.out.print(kursy);
+				String nazwa = sc.nextLine();
+				
+				for (Kurs kurs : kursy) {
+					
+					if(kurs.nazwaKursu.equals(nazwa)) {
+						
+						uczestnik.kurs = nazwa;
+						
+					}
+					
+				}
+				//System.out.println(uczestnik.imie + " " + uczestnik.nazwisko + " ");
+				
+			}
+			
+		}
+		
 	}
 
 	public void panelUczestnika() {

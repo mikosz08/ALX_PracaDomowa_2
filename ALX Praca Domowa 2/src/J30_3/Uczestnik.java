@@ -7,6 +7,7 @@ public class Uczestnik {
 	ArrayList<Uczestnik> uczestnicy = new ArrayList<>();
 	String imie;
 	String nazwisko;
+	String kurs;
 	Scanner sc = new Scanner(System.in);
 	int licznikKursantow = 0;
 
@@ -86,7 +87,7 @@ public class Uczestnik {
 
 	@Override
 	public String toString() {
-		return "Uczestnik [imie=" + imie + ", nazwisko=" + nazwisko + "]";
+		return "Uczestnik [imie=" + imie + ", nazwisko=" + nazwisko + "kurs=" + kurs + "]";
 	}
 
 }
