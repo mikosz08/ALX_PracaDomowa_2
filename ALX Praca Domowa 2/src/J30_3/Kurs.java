@@ -3,8 +3,6 @@ package J30_3;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-//sprawdz jeszcze raz edytowanie + ogarnac dodawanie kurantow do kursu czy kursu do kursanta elobenc
-
 public class Kurs extends Uczestnik {
 	ArrayList<Kurs> kursy = new ArrayList<>();
 	String nazwaKursu;
@@ -86,7 +84,6 @@ public class Kurs extends Uczestnik {
 					}
 					
 				}
-				//System.out.println(uczestnik.imie + " " + uczestnik.nazwisko + " ");
 				
 			}
 			
