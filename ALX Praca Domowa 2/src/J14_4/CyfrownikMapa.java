@@ -4,7 +4,7 @@ import java.util.HashMap;
 import java.util.Scanner;
 
 public class CyfrownikMapa {
-
+		//zamienic String na char Integer na String
 	HashMap<String, Integer> mapaCyfr = new HashMap<>();
 	Scanner sc = new Scanner(System.in);
 
